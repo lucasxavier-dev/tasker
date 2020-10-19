@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="shortcut icon" href="/styles/icons/task.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="global.css">
+    <title>Tasker - Smart Organizer</title>
+</head>
+
+<body>
+
+    <div class="main-content">
+
+        <header class="header-content">
+            <h1>Tasker</h1>
+
+            <input type="text" placeholder="Create a new task..." id="task" />
+
+            <button id="add">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                    </path>
+                </svg>
+            </button>
+
+        </header>
+
+        <!-- total-content -->
+
+        <div class="task-content">
+
+            <!-- create a new task -->
+
+            <div id="create-task">
+
+                <h2>Today</h2>
+
+
+                <ul class="new-task" id="new-task">
+
+                    <!-- <div id="check-task">
+                        <div class="form-group ">
+                            <div class="col-md-5">
+                                <div class="checkbox">
+                                    <input name="packersOff" class="strikethrough" value="1" type="checkbox">
+                                    <label for="packersOff">Escovar os dentes</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </ul>
+            </div>
+ 
+
+            <!-- completed-task -->
+
+            <div id="completed-task">
+                <h2>Tasks completed</h2>
+
+                <ul class="completed-task" id="completed"></ul>
+
+
+            </div>
+        </div>
+        <footer id="calender">
+            <h1></h1>
+        </footer>
+    </div>
+    <script type="text/javascript" src="main.js" defer></script>
+</body>
+
+</html>

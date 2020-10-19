@@ -1,0 +1,221 @@
+:root {
+    --font-color: #252A31;
+    --background-color: #FFFFFF;
+    --task-content: #EBEFF9;
+    --svg-complete-color: #0984e3;
+
+
+    --todo-bg-color: #00b894;
+    
+    --done-bg-color: #61DEA4;;
+    
+    --svg-normal-color: #2d3436;
+    --svg-hover-color: #0984e3;
+    --svg-remove-color: #F45E6D;
+    --svg-remove-hover-color: #ff4757;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+    /* create-tasks */
+
+    .header-content {
+        margin: 0 0 4px 0;
+
+    }
+
+    .header-content h1 {
+        text-align: center;
+        margin: 4px auto 4px;
+        font-size: 32px;
+        opacity: 1;
+        
+    }
+
+
+
+    .header-content #task {
+        width: 80%;
+        box-sizing: border-box;
+        margin: auto 0.5rem 1rem;
+        max-height: 2rem;
+        padding: 0.2rem;
+        border-radius: 4px;
+        border: 0.100rem solid #b6b6b6;
+        opacity: 0.7;
+    }
+
+    
+
+    .header-content  button {
+        padding: 0.25rem;
+        border: 0.125rem solid #EBECEC;
+        border-radius: 0.25rem;
+        min-width: 1.36rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+        #add {
+            fill: var(--font-color);
+        }
+
+        #add:hover {
+            fill: var(--svg-hover-color);
+        }
+
+
+
+        /* today tasks */
+
+        .task-content {
+            max-width: auto;
+            margin: auto;
+        }
+
+        #create-task {
+            border: 0.4px solid #EBECEC;
+            border-radius: 4px;
+
+            margin: 0.2rem;
+
+        }
+
+
+    #create-task h2 {
+        text-align: left;
+        margin: 4px 8px 4px 8px;
+        font-size: 24px;
+        color: var(--font-color);
+
+        display: inline;
+    }
+
+    #create-task #more  {
+        color: black;
+        position: relative;
+        top: 4px;
+    }
+
+        li {
+            list-style: none;
+        }
+
+    #check-task input {
+        position: relative;
+        top:1px
+
+    }
+
+    #create-task .check-task {
+        border: 0.2px solid #EBECEC;
+        border-radius: 0.25rem;
+        margin: 0.25rem 0.5rem 0.5rem 0.25rem;
+            /* padding: content-intern */
+        padding: 4px 8px 4px 8px;
+        box-sizing: border-box;
+        display: flex;
+        font-size: 1rem;
+
+        position: relative;
+    }
+
+    .new-task li span {
+        margin-left: 5px;
+        background-color: #006CFF;   
+      }
+
+      /* completed task */
+
+    #completed-task {
+        border: 0.4px solid #EBECEC;
+        border-radius: 4px;
+
+        margin: 0.2rem;
+
+        background-color: var(--background-color);
+    }
+
+    #completed-task h2 {
+        margin: 0.2rem;
+    }
+
+
+
+    
+    
+    .completed-task {
+        padding: 0.25rem;
+        border: 0.125rem solid #EBECEC;
+        border-radius: 0.25rem;
+        min-width: 1.36rem;
+        
+        
+        background: none;
+        border: none;
+        
+        
+    }   
+    
+    #completed-task li {
+
+        border: 0.2px solid #EBECEC;
+        border-radius: 0.25rem;
+        margin: 0.25rem 0.5rem 0.5rem 0.25rem;
+        padding: 4px 8px 4px 8px;
+        box-sizing: border-box;
+        display: flex;
+        font-size: 1rem;
+        position: relative;
+        
+        /* background-color: var(--done-bg-color); */
+    }
+
+ 
+
+        .completed-task:hover {
+            fill: var(--done-bg-color);
+        }
+
+
+        
+
+
+            .remove {
+        fill: var(--font-color);
+
+        padding: 0.25rem;
+        border: 0.125rem solid #EBECEC;
+        border-radius: 0.25rem;
+        min-width: 1.36rem;
+        background: none;
+        border: none;
+    }
+
+
+/* make the remove icon a different color on hover */
+
+.remove:hover {
+    fill: var(--svg-remove-hover-color);
+}
+
+.buttons-task {
+    margin-left: auto;
+    display: inline;
+
+
+}
+     
+
+    
