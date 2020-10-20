@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--FFFFFF-color);
 }
 
     /* create-tasks */
@@ -33,6 +33,52 @@ body {
         margin: 0 0 4px 0;
 
     }
+
+        /* change button background color */
+    .box{
+        padding: 5px;
+        height: 24px;
+        width: 112px;
+
+        position: relative;
+        display: inline-table;
+        background: none;
+        cursor: pointer;
+    }
+
+    .box a {
+        width: 40px;
+        height: 40px;
+        float: left;
+        text-indent: -9999px;
+        margin: 0px 0.5px;
+        max-width: 16px;
+        max-height: 16px;
+        border-radius: 16px;
+
+        border: solid 1px #f1f1f1;
+    }
+
+    #red {
+        background: #e74c3c;
+    }
+
+    #blue {
+        background: #3498db;
+    }
+    #green {
+        background: #2ecc71;
+    }
+    #background {
+        background: #FFFFFF;
+    }
+    #yellow {
+        background: #f1c40f;
+    }
+    #orange {
+        background: #f39c12;
+    }
+    
 
     .header-content h1 {
         text-align: center;
@@ -118,6 +164,10 @@ body {
 
     }
 
+    ::placeholder {
+        opacity: 0.4;
+    }
+
     #create-task .check-task {
         border: 0.2px solid #EBECEC;
         border-radius: 0.25rem;
@@ -144,7 +194,7 @@ body {
 
         margin: 0.2rem;
 
-        background-color: var(--background-color);
+        background-color: none;
     }
 
     #completed-task h2 {

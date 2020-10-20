@@ -8,19 +8,28 @@
 
     <link rel="shortcut icon" href="/styles/icons/task.ico" type="image/x-icon">
     
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="/styles/global.css">
     <title>Tasker - Smart Organizer</title>
 </head>
 
 <body>
+  
+
 
     <div class="main-content">
 
         <header class="header-content">
             <h1>Tasker</h1>
-
+      
             <input type="text" placeholder="Create a new task..." id="task" />
-
+            <div class="box">
+                <a onclick="changecolor('red')" id="red">#e74c3c</a>
+                <a onclick="changecolor('blue')" id="blue">#3498db</a>
+                <a onclick="changecolor('green')" id="green">#2ecc71</a>
+                <a onclick="changecolor('yellow')" id="yellow">#f1c40f</a>
+                <a onclick="changecolor('orange')" id="orange">#f39c12</a>
+                <a onclick="changecolor('background')" id="background">#FFFFFF</a>
+                </div>
             <button id="add">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -69,11 +78,17 @@
 
             </div>
         </div>
-        <footer id="calender">
-            <h1></h1>
-        </footer>
+
     </div>
     <script type="text/javascript" src="main.js" defer></script>
+
+    <script type="text/javascript">
+        function changecolor(id) {
+            document.body.style.background = document.getElementById(id).innerHTML;
+        }
+            
+
+    </script>
 </body>
 
 </html>

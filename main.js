@@ -105,6 +105,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    function changecolor(id) {
+        document.body.style.background = document.getElementById(id).innerHTML;
+    };
+
+    function changecolor(id) {
+        document.body.style.background = document.getElementById(id).innerHTML;
+    }
+        
+
+
 
 
 
