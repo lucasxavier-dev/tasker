@@ -113,9 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.background = document.getElementById(id).innerHTML;
     }
         
+    /* <script type="text/javascript" src="main.js" defer></script> */
 
-
-
-
-
+    /* <script type="text/javascript"> */
+        
+            /*  ChangeColor  */
+        function changecolor(id) {
+            document.body.style.background = document.getElementById(id).innerHTML;
+        }
 });
