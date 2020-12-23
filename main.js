@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         task.classList.add('check-task')
 
         task.innerText = text;
-
+      
         //create container for our buttons remove and completed
 
         let buttons = document.createElement('div');
