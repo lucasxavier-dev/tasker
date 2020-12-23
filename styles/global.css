@@ -36,7 +36,7 @@ body {
 
         /* change button background color */
     .box{
-        padding: 5px;
+        padding: 4px;
         height: 24px;
         width: 112px;
 
@@ -89,14 +89,15 @@ body {
     }
 
     .header-content #task {
-        width: 80%;
+        width: 50%;
         box-sizing: border-box;
-        margin: auto 0.5rem 1rem;
+        margin: auto 2rem 2em 4rem;
         max-height: 2rem;
         padding: 0.2rem;
         border-radius: 4px;
         border: 0.100rem solid #b6b6b6;
         opacity: 0.7;
+        background-color: #EBECEC;
     }
 
     
@@ -124,7 +125,7 @@ body {
         /* today tasks */
 
         .task-content {
-            max-width: auto;
+            max-width: 70rem;
             margin: auto;
         }
 
@@ -132,7 +133,7 @@ body {
             border: 0.4px solid #EBECEC;
             border-radius: 4px;
 
-            margin: 0.2rem;
+            margin: 0.5rem;
 
         }
 
@@ -141,7 +142,6 @@ body {
         text-align: left;
         margin: 4px 8px 4px 8px;
         font-size: 24px;
-        color: var(--font-color);
 
         display: inline;
     }
@@ -265,5 +265,3 @@ body {
 
 }
      
-
-    
