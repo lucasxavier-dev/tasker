@@ -25,6 +25,8 @@
 
 body {
     background-color: var(--FFFFFF-color);
+    max-width: 480px;
+    margin: 0 auto;
 }
 
     /* create-tasks */
@@ -167,6 +169,7 @@ body {
     }
 
     #create-task .check-task {
+        background: #e2e2e2ba;
         border: 0.2px solid #EBECEC;
         border-radius: 0.25rem;
         margin: 0.25rem 0.5rem 0.5rem 0.25rem;
